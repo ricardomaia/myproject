@@ -15,4 +15,5 @@ Run the following command to start both frontend and backend applications simult
 ```console
 npm run dev
 ```
-![](https://i.imgur.com/ndO0lOg.png)
+
+![Console terminal output](https://i.imgur.com/ndO0lOg.png)
