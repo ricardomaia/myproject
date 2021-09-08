@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { v4 as uuid_v4 } from "uuid";
 
 function App() {
-  const url = "http://localhost:5000/api";
+  const url = "/api";
   const [users, setUsers] = useState([]);
 
   useEffect(() => {

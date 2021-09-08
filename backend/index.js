@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const ip = require("ip");
 
 // Environment Configurations
 dotenv.config({ path: `${__dirname} /../.env` });
@@ -24,6 +25,9 @@ app.use(cors(corsOptions));
 app.set("port", process.env.PORT || 5000);
 app.use(express.static("public"));
 
+const ipAddress = ip.address();
+const ipPort = app.get("port");
+
 // Reload code here
 reload(app)
   .then(function (reloadReturned) {
@@ -31,7 +35,7 @@ reload(app)
 
     // Reload started, start web server
     server.listen(app.get("port"), function () {
-      console.log("Web server listening on port " + app.get("port"));
+      console.log(`Web server listening on http://${ipAddress}:${ipPort}`);
     });
   })
   .catch(function (err) {
