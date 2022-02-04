@@ -1,5 +1,7 @@
 # myproject
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/ricardomaia/myproject)
+
 This simple project is part of [Javascript Fast Track](https://github.com/ricardomaia/javascript-fast-track) :rocket:.
 
 ## Installing and running locally
